@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
+  mode: 'development',
   devServer: {
     port: 9000,
   },
@@ -20,19 +21,22 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      // {
+      //   test: /\.(png|jpe?g|gif)$/i,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         outputPath: 'images',
+      //       },
+      //     },
+      //   ],
+      // },
       {
         test: /\.html$/,
         use: [
           {
             loader: 'html-loader',
-          },
-        ],
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
           },
         ],
       },

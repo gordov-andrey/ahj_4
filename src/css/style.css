@@ -1,7 +1,23 @@
 body {
     color: #999;
 }
-.col {
-    width: auto;
-    border: 2px solid black;
+h1 {
+    color:black;
+}
+.input {
+    height: 32px;
+    font-size: 24px;
+}
+.ok {
+    border: 5px solid rgba(34, 218, 27, 0.856);
+    
+}
+.card {
+    filter: grayscale(1);
+}
+.active {
+    filter: none;
+}
+form {
+    padding-top: 30px;
 }
